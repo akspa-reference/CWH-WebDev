@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Math Object in JavaScript</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>This is Math object Tutorial</h1>
+  </div>
+  <script>
+    // Printing the math object
+    let m = Math;
+    console.log(m);
+
+    //   Printing the constants from Math Object
+    console.log("The value of Math.E is", Math.E);
+    console.log("The value of Math.Pi is", Math.PI);
+    console.log("The value of Math.LN2 is", Math.LN2);
+    console.log("The value of Math.SQRT1_2 is", Math.SQRT1_2);
+    console.log("The value of Math.LOG2E is", Math.LOG2E);
+
+    // Printing the Function from Math Object
+    let a = 34.64534;
+    let b = 89;
+
+    // Round Function
+    console.log("The value of a and b is ", a, b);
+    console.log("The value of a and b rounded is", Math.round(a), Math.round(b));
+
+    // Power function
+    console.log("3 raised to the power 2 is", m.pow(3, 2));
+
+    console.log("Square root of 3 is", m.sqrt(3));
+
+    // Ceil and Floor
+    console.log("5.8 rounded up to nearest integer is", m.ceil(5.8));
+    console.log("5.8 rounded down to nearest integer is", m.floor(5.8));
+
+    // Absolute function
+    console.log("Absolute value of -3.24 is", m.abs(-3.24));
+
+    // Trigonometric ratio values
+    console.log("The value of sin(pi) is", m.sin(m.PI));
+
+    // Min and max functions
+    console.log("Minimum value of 4, 5, 6 is", m.min(4, 5, 6));
+    console.log("Maximum value of 4, 5, 6 is", m.max(4, 5, 6));
+
+    // Generating a Random number
+    let r = m.random();
+    // Random number b/w (a, b) = a + (b-a)*Math.random()
+    let r1_100 = 1 + 99 * m.random();
+    let r50_60 = 50 + 10 * m.random();
+    console.log("The random number is", r1_100, r, r50_60);
+
+  </script>
+</body>
+
+</html>
