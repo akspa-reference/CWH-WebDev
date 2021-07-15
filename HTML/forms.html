@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h2>Forms in HTML</h2>
+    <form action="backend.php">
+      <div>
+        <label for="name">Name : </label>
+        <input type="text" name="myName" id="name" />
+      </div>
+      <br />
+      <div>
+        <label for="adm">Admission Number : </label>
+        <input type="text" name="myAdmno" id="adm" />
+      </div>
+      <br />
+      <div>
+        <label for="mail">Email : </label>
+        <input type="email" name="myEmail" id="mail" />
+      </div>
+      <br />
+      <div>
+        <label for="birth">Birthday : </label>
+        <input type="date" name="myBday" id="birth" />
+      </div>
+      <br />
+      <div>
+        <label for="mrk">Marks : </label>
+        <input type="number" name="myMarks" id="mrk" />
+      </div>
+      <br />
+      <div>
+        <label for="elig">Are you eligible? : </label>
+        <input type="checkbox" name="myEligibility" id="elig" />
+      </div>
+      <br />
+      <div>
+        <label for="gend">Gender : <br /></label>
+        <input type="radio" name="myGender" id="gend" /> Male
+        <input type="radio" name="myGender" id="gend" /> Female
+        <input type="radio" name="myGender" id="gend" /> Others
+      </div>
+      <br />
+      <div>
+        <label for="branch">Branch of Graduation</label>
+        <select name="myBranch" id="branch">
+          <option value="no select" selected>Select your branch</option>
+          <option value="me">Mechanical</option>
+          <option value="ce">Civil</option>
+          <option value="che">Chemical</option>
+          <option value="cs">Computer Science</option>
+          <option value="ee">Electrical</option>
+          <option value="ece">Electronics</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="hire">Why should we hire you? <br /></label>
+        <textarea name="myHire" id="hire" cols="50" rows="5"></textarea>
+      </div>
+      <br />
+      <div>
+        <input type="submit" value="Complete" />
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+  </body>
+</html>
