@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box shadow and text shadow\</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+    }
+    .card {
+      padding: 23px 12px;
+      margin: 23px 12px;
+      background-color: pink;
+
+      /* box-shadow: offset-x offset-y blur-radius spread-radius color; && negative means opposite sides*/
+      /* box-shadow: 7px 5px 10px 4px rgba(34, 184, 172, 0.5); */
+
+      box-shadow: inset 3px 2px green, 5px 2px red;
+    }
+    .card h2 {
+      text-shadow: 3px 2px 2px white;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="card" id="card1">
+        <h2>This is C++ Course</h2>
+        <p>
+          I have started C++ course which does not mean this course is
+          completed. We will do this until completion. Lorem ipsum dolor sit
+          amet, consectetur adipisicing elit. Mollitia necessitatibus placeat
+          eius, laborum ipsam nesciunt veritatis dolorem architecto corporis
+          deserunt, reiciendis modi neque enim harum sapiente quod, magnam
+          maxime esse quis fugiat deleniti totam!
+        </p>
+      </div>
+      <div class="card" id="card2">
+        <h2>This is HTML Course</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+          necessitatibus placeat eius, laborum ipsam nesciunt veritatis dolorem
+          architecto corporis deserunt, reiciendis modi neque enim harum
+          sapiente quod, magnam maxime esse quis fugiat deleniti totam!
+        </p>
+      </div>
+      <div class="card" id="card3">
+        <h2>Card3</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+          necessitatibus placeat eius, laborum ipsam nesciunt veritatis dolorem
+          architecto corporis deserunt, reiciendis modi neque enim harum
+          sapiente quod, magnam maxime esse quis fugiat deleniti totam!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
